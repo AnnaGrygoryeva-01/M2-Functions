@@ -1,4 +1,20 @@
 // 1) Написати функцію, яка приймає два значеня і повертає більше значення, якщо значення одного типу, в усіх інших випадках повертає null
+/**
+ * Compares two values of the same type and returns the larger one.
+ *
+ * @param {*} a - The first value (can be any type)
+ * @param {*} b - The second value (can be any type)
+ * @returns {*|null} Returns larger value if types match, or null if types differ or values are equal.
+ */
+function chooseBigger(a, b) {
+  if (a > b && typeof a === typeof b) {
+    return a;
+  } else if (b > a && typeof a === typeof b) {
+    return b;
+  } else {
+    return null;
+  }
+}
 
 // 2) Написати функцію, яка просить користувача ввести число і виводить повідомлення яке він число ввів: "додатнє", "нуль" або "від'ємне", або виводить повідомлення "це не число"
 
