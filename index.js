@@ -3,6 +3,26 @@
 // 2) Написати функцію, яка просить користувача ввести число і виводить повідомлення яке він число ввів: "додатнє", "нуль" або "від'ємне", або виводить повідомлення "це не число"
 
 // 3) Написати функцію, яка приймає параметром число і перевіряє чи є це число дільником 100. Повертає булеве значення.
+/**
+ * Checks if a number is a divisor of 100.
+ *
+ * @param {number} num - number to check
+ * @returns {boolean} true if num is a divisor of 100, false otherwise
+ */
+
+function isDivisorOf100(num) {
+  if (100 % num === 0) {
+    return true;
+  }
+  return false;
+}
+// or
+function isDivisorOf100(num) {
+  return 100 % num === 0;
+}
+
+console.log(isDivisorOf100(50)); // true
+console.log(isDivisorOf100(54)); // false
 
 // 4) Написати функцію, яка перевіряє можливість існування трикутника.
 // Функція приймає три числа - сторони трикутника, повертає булеве значення. Значення за замовчуванням 3,4,5.
