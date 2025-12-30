@@ -17,6 +17,25 @@ function chooseBigger(a, b) {
 }
 
 // 2) Написати функцію, яка просить користувача ввести число і виводить повідомлення яке він число ввів: "додатнє", "нуль" або "від'ємне", або виводить повідомлення "це не число"
+/**
+ * Checks if a number is positive, negative, zero, or not a number.
+ *
+ * @param {number} num - a number to check
+ * @returns {string} - returns whether the number is positive, negative, zero, or not a number
+ */
+
+function checkNumber(num) {
+  if (isNaN(num)) {
+    return "This is not a number";
+  }
+  if (num > 0) {
+    return "positive";
+  } else if (num < 0) {
+    return "negative";
+  } else {
+    return "zero";
+  }
+}
 
 // 3) Написати функцію, яка приймає параметром число і перевіряє чи є це число дільником 100. Повертає булеве значення.
 
