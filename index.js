@@ -62,3 +62,19 @@ console.log(isDivisorOf100(54)); // false
 // 4) Написати функцію, яка перевіряє можливість існування трикутника.
 // Функція приймає три числа - сторони трикутника, повертає булеве значення. Значення за замовчуванням 3,4,5.
 // Трикутник існує тоді і тільки тоді, коли сума довжин будь-яких двох його сторін більша за третю.
+
+/**
+ * Checks if a triangle can exist with the given side lengths.
+ *
+ * @param {number} [a = 3] - first side length
+ * @param {number} [b = 4] - second side length
+ * @param {number} [c = 5] - third side length
+ * @returns {boolean} true if triangle can exist, false otherwise
+ */
+function isTriangle(a = 3, b = 4, c = 5) {
+  if (a + b > c && a + c > b && b + c > a) {
+    return true;
+  } else {
+    return false;
+  }
+}
